@@ -15,6 +15,7 @@ class Server {
     constructor() {
         this.app  = express();
         this.port = process.env.PORT || '8000';
+       
 
         // Métodos iniciales
         this.conectarDB();
@@ -39,8 +40,10 @@ class Server {
     }
 
 
-    routes() {
-        this.app.use( this.apiPaths.laps, stopwatchRoutes )
+    routes = () => {
+        this.app.use( this.apiPaths.laps, stopwatchRoutes );
+
+            
     }
 
 

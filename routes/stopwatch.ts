@@ -1,11 +1,12 @@
 import { Router } from 'express';
-import { postLaps, getLapsByUser } from '../controllers/stopwatch';
+import { postLaps, getLapsByName } from '../controllers/stopwatch';
+
 
 const router = Router();
 
 
-router.post('/laps', postLaps );
-router.get('/:user', getLapsByUser );
+router.post('/', postLaps);
+router.get('/:name', getLapsByName);
 
 
 export default router;

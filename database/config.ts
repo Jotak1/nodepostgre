@@ -1,6 +1,7 @@
 import { Sequelize } from 'sequelize';
 
-const  sequelize = new Sequelize('postgres://postgres@localhost:5432/postgres');
+//conexion sequelize a postgres con usuario y contraseña
+const sequelize = new Sequelize('postgres://postgres:1234@localhost:5432/stopwatch');
 
 export const dbConnection = () => {
 
