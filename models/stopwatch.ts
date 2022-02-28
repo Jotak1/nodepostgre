@@ -1,8 +1,7 @@
 import { Sequelize, DataTypes } from "sequelize";
 
-const sequelize = new Sequelize(
-  "postgres://postgres:1234@localhost:5432/stopwatch"
-);
+const sequelize = new Sequelize('postgres://stopwatch:stopwatch@localhost:5432/stopwatch');
+
 
 const User = sequelize.define("users", {
   id: {
