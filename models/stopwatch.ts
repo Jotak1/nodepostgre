@@ -1,6 +1,6 @@
-import { Sequelize, DataTypes } from "sequelize";
+import {  DataTypes } from "sequelize";
+import sequelize from "../database/config";
 
-const sequelize = new Sequelize('postgres://stopwatch:stopwatch@localhost:5432/stopwatch');
 
 
 const User = sequelize.define("users", {
