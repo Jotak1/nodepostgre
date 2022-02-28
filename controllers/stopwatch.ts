@@ -33,13 +33,13 @@ export const getLapsByName = async (req: Request, res: Response) => {
         },
         });
     
-        res.json({
-        code: 200,
+        res.status(200).json({
+            code: 200,
         data: stopwatch,
         });
     } catch (error) {
         console.log(error);
-        res.json({
+        res.status(500).json({
         code: 500,
         message: "Error al obtener los datos",
         data: {},
